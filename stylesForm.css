@@ -92,6 +92,23 @@ form {
     align-items: center;
     filter: drop-shadow(0 0 7px
     white);
+    animation-name: formAnimateX;
+    animation-duration: 1.3s;
+    animation-delay: 220ms;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+@keyframes formAnimateX {
+    from {
+        opacity: 0%;
+        transform: translateY(-12px)
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
 }
 
 #imgClass {

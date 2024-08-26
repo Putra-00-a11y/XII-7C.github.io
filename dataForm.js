@@ -6,6 +6,7 @@ let buttonBackSecure = document.getElementById("buttonBackSecure");
 
     console.log(username.value);
     console.log(password.value);
+    localStorage.setItem("DataUser", username.value);
     localStorage.setItem("DataPass", password.value);
     window.location.assign = "hallClass.html";
 
@@ -18,6 +19,7 @@ function buttonSubmit0() {
         alert(`Halo ${username.value}, Selamat Datang!`);
         window.location.href = "hallClass.html";
     }
+
     else {
         console.log(`Login Ditolak!`);
         alert(`Kata [password] Salah! coba lagi..`);
